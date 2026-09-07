@@ -1,39 +1,61 @@
-# Projeto
+# Projeto Portfólio
 
-Meu portifolio
+> Repositório oficial do meu portfólio pessoal: [portfolio-arthur-castro](https://github.com/ArthurCastro99/portfolio-arthur-castro)
 
-- portifolio-arthur-castro
+## Sobre Mim
 
-### Opa Tudo Bem?
+Olá! Sou o **Arthur**, desenvolvedor Front-end com experiência no desenvolvimento de aplicações utilizando **HTML5, CSS3, JavaScript (ES6+) e React**.
 
-Eu sou Arthur desenvolvedor Frontend meu [Currículo](https://drive.google.com/file/d/1ZnBIjp304RlGJAszcJ-Zf0Q-n2lXOJvN/view) está livre para olharem e caso tenham interesse, entre em contato na seção de Contato, lá está tudo o que precisa para conversar comigo.
+Utilizo **Git** para versionamento de código e o **GitHub** para hospedar meus projetos e acompanhar novas tecnologias. Tenho facilidade e experiência com sistemas operacionais Windows e Linux (atualmente utilizando Fedora Workstation).
 
-## Sobre o Projeto
+No momento, estou cursando **Análise e Desenvolvimento de Sistemas (EAD)** e expandindo meus conhecimentos para o Back-end, com foco em **Node.js, Express, PostgreSQL e APIs REST**.
 
-O objetivo deste projeto é mostrar as tecnologias que tenho conhecimento, além de mostrar projetos e exibir um pouco sobre mim. Ajustes de tamanhos de todas as telas desde desktop a mobile. Finalizando com uma seçao de footer-contatos para entrar em contato com o desenvolvedor frontend caso tenha interesse. Funciona bem como um currículo demostrativo para avaliadores.
+---
 
-## Tecnologias Utilizadas
+## 💻 Sobre o Projeto
 
-- HTML5
-- CSS3
-- JavaScript ES6
+O objetivo deste projeto é apresentar minhas habilidades técnicas, expor meus principais projetos e contar um pouco sobre minha trajetória.
 
-Futuramente nas proximas atualizações em um projeto diferente vou implementar tudo utilizando o [Vite](https://vite.dev/).
+A interface foi desenvolvida com **HTML, CSS e JavaScript puro**, contando com layout totalmente responsivo (adaptado para dispositivos móveis e desktops).
 
-- React
+📄 **[Visualizar meu Currículo em PDF](https://drive.google.com/file/d/1KWIg4bjw-WJLmqDow7XGlTTGh58OEewE/view)**
 
-## Tranquilo ?
+---
 
-Se quiser experimentar este mini-projeto fique a vontade, pois dentro do site que o github disponibiliza da para baixar ou até mesmo clonar o projeto. Eu sempre deixo projetos públicos livres para aprimorarem.
+## 🛠️ Tecnologias Utilizadas
 
-## Aprendizados / Detalhes
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
 
-Como foi foi escrito acima este projeto é simples, muito bom até mesmo para mostrar um pouco do que sabe sobre front end e seus fundamentos. Além disso vai ter um atualização mais moderna deste projeto.
-Mas o que posso dizer deste projeto e que foi uma pratica de fundamentos e demostrativo do meu portifólio.
+> **Próximos passos (v3.0):** Em uma futura atualização, o projeto será reestruturado utilizando **Vite** e **React**.
+
+---
+
+## 📥 Como Clonar e Executar o Projeto
+
+Fique à vontade para testar, clonar ou sugerir melhorias no projeto!
+
+### Passo a passo para Download:
+
+1. Acesse o [Repositório no GitHub](https://github.com/ArthurCastro99/portfolio-arthur-castro).
+2. Clique no botão verde **`< > Code`**.
+3. Escolha a opção **Download ZIP** ou copie a URL HTTPS para clonar.
+
+![Como baixar o repositório](src/image/imgs/imgmd.png)
+
+> ⚠️ **Aviso:** Caso vá clonar o repositório via terminal, prefira utilizar a URL no protocolo **HTTPS**.
+
+```bash
+# Clonar o repositório via terminal
+git clone
+```
+
+[https://github.com/ArthurCastro99/portfolio-arthur-castro.git](https://github.com/ArthurCastro99/portfolio-arthur-castro.git)
 
 ## Contato
 
-Eu gosto muito de ouvir e ler opiniões que me ajudam a aprender e evoluir, então se você estiver algo para falar sobre os meus projetos, me envie mensagem por um desses links :
+Eu gosto muito de ouvir e ler opiniões que me ajudam a aprender e evoluir, então se você tiver algo para falar sobre os meus projetos, me envie mensagem por um desses links :
 
 📱 : [**Instagram**](https://www.instagram.com/arthurcastro_99/)
 
