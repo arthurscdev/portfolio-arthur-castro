@@ -22,3 +22,15 @@ let observer = new IntersectionObserver(
 animacao.forEach((element) => {
   observer.observe(element);
 });
+
+const observerTop = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    document.querySelector(".scroll-top").classList.remove("ativo");
+    document.querySelector(".scroll-top").classList.add("desativar");
+  } else {
+    document.querySelector(".scroll-top").classList.add("ativo");
+    document.querySelector(".scroll-top").classList.remove("desativar");
+  }
+});
+
+observerTop.observe(document.querySelector("#topo"));

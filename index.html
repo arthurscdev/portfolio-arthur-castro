@@ -17,8 +17,8 @@
     <title>Portifólio | Arthur</title>
   </head>
   <body>
-    <header>
-      <div>
+    <header id="topo" class="animar">
+      <div class="logo">
         <a href="/" aria-label="Página inicial">
           <img src="./src/image/icon/logo.png" alt="Imagem do logo" />
           <span class="sr-only">Arthur</span>
@@ -53,7 +53,7 @@
 
     <main>
       <section class="apresentacao">
-        <div>
+        <div class="container">
           <div class="titulos">
             <h2 class="tituloApresentacao">Olá, prazer eu sou</h2>
             <h1 class="tituloDestaque">Arthur Castro</h1>
@@ -120,6 +120,12 @@
             <li class="icon-react">
               <i class="fa-brands fa-react"></i>
             </li>
+            <li class="icon-postgresql">
+              <i class="fa-solid fa-database"></i>
+            </li>
+            <li class="icon-nodejs">
+              <i class="fa-brands fa-node-js"></i>
+            </li>
           </ul>
         </div>
       </section>
@@ -183,8 +189,8 @@
                 <li class="icon-react"><i class="fa-brands fa-react"></i></li>
               </ul>
               <p class="textoPadrao">
-                Projeto pokedex utilizando API do pokeapi.co, desenvolvido com
-                HTML, CSS, JavaScript e React.
+                Projeto pokedex e desenvolvido com HTML, CSS, JavaScript e
+                React.
               </p>
 
               <div class="botoes">
@@ -472,6 +478,10 @@
         </p>
       </div>
     </footer>
+
+    <a class="scroll-top infinito" href="#topo" aria-label="Voltar ao topo">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <script src="src/js/index.js"></script>
   </body>

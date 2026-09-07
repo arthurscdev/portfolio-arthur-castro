@@ -41,18 +41,21 @@ footer {
   }
 
   /* Logo do Header */
-  header div a {
+
+  header .logo {
     display: flex;
-    width: 13rem;
-    height: 100%;
     justify-content: center;
     align-items: center;
   }
 
-  header div a img {
-    max-width: 100%;
-    height: 13rem;
+  header .logo a {
+    width: 10rem;
+  }
+
+  header .logo a img {
     object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   header div a,
@@ -226,10 +229,9 @@ footer {
       "footer footer" minmax(50vh, auto)
       / 1fr 1fr;
   }
-  header div a {
-    width: 20rem;
+
+  header .logo a {
     height: 100%;
-    margin-left: -1.5rem;
   }
 
   header nav input,
@@ -585,48 +587,49 @@ footer {
 }
 
 @media (min-width: 769px) {
-  main .apresentacao div {
+  main .apresentacao .container {
     margin: 0;
-
+    width: 100%;
     justify-content: center;
-    align-items: start;
+    align-items: center;
   }
 
-  main .apresentacao div .titulos h2 {
+  main .apresentacao .container .titulos {
+    text-align: center;
+  }
+
+  main .apresentacao .container .titulos h2 {
     font-size: 3.5rem;
   }
 
-  main .apresentacao div .titulos h1 {
+  main .apresentacao .container .titulos h1 {
     font-size: 4rem;
   }
 
-  main .apresentacao div .titulos p {
-    width: 50%;
+  main .apresentacao .container .botoes {
+    justify-content: center;
   }
 
-  main .apresentacao div .botoes {
-    justify-content: start;
-  }
-
-  main .apresentacao div .botoes .botao {
+  main .apresentacao .container .botoes .botao {
     font-size: 2rem;
-    width: 15rem;
+    width: 17rem;
   }
 
   main .sobre div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: justify;
   }
 
-  main .sobre div p {
+  main .sobre .secao-sobre p {
     width: 100%;
+    text-align: justify;
+    text-indent: 5rem;
   }
 
   main .sobre div .perfil-link {
-    min-width: 33rem;
-    min-height: 33rem;
+    min-width: 35rem;
+    min-height: 35rem;
   }
 
   main .conhecimentos {
@@ -754,6 +757,60 @@ footer {
   filter: blur(0);
 }
 
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  border-radius: 50%;
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background-color: var(--cor-principal);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.scroll-top:hover {
+  background-color: var(--cor-secundario);
+}
+
+.scroll-top i {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-secundario);
+  border-radius: 50%;
+  transition: 0.3s all ease;
+  font-size: 2rem;
+}
+
+.scroll-top.ativo i:hover {
+  color: var(--cor-principal);
+}
+
+.scroll-top.ativo:hover i {
+  animation: infinit-top 1s ease-in-out infinite;
+}
+
+.scroll-top.ativo {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  animation: surgir-baixo 0.3s ease-in-out;
+}
+
+.scroll-top.desativar {
+  animation: desativar 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /* Animações */
 
 @keyframes surgir-cima {
@@ -802,6 +859,39 @@ footer {
   }
 }
 
+@keyframes infinit-top {
+  0% {
+    transform: translateY(0rem);
+  }
+
+  25% {
+    transform: translateY(-0.5rem);
+  }
+
+  50% {
+    transform: translateY(0rem);
+  }
+  75% {
+    transform: translateY(0.2rem);
+  }
+
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes desativar {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+}
+
 /* Padrões de escritas */
 
 .tituloApresentacao {
@@ -840,12 +930,14 @@ footer {
 /* Icons */
 
 .fa-brands,
-.fa-regular {
+.fa-regular,
+.fa-solid {
   color: var(--cor-secundario);
   transition: 0.3s all ease;
 }
 
 .fa-brands:hover,
-.fa-regular:hover {
+.fa-regular:hover,
+.fa-solid:hover {
   color: var(--cor-principal);
 }
