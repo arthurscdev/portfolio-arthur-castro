@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/globals.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="shortcut icon" href="./src/image/icon/logo.png" />
+    <link rel="shortcut icon" href="./src/image/icon/logo.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,10 +17,10 @@
     <title>Portifólio | Arthur</title>
   </head>
   <body>
-    <header id="topo" class="animar">
+    <header id="topo">
       <div class="logo">
         <a href="/" aria-label="Página inicial">
-          <img src="./src/image/icon/logo.png" alt="Imagem do logo" />
+          <img src="./src/image/icon/logo.webp" alt="Imagem do logo" />
           <span class="sr-only">Arthur</span>
         </a>
       </div>
@@ -28,7 +28,12 @@
       <nav>
         <input type="checkbox" id="menu" />
 
-        <label for="menu">
+        <label
+          for="menu"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
           <div>
             <span class="hamburguer"></span>
           </div>
@@ -86,6 +91,7 @@
               class="perfil-link"
               target="_blank"
               href="https://github.com/ArthurCastro99"
+              aria-label="Ir para o GitHub"
             >
             </a>
           </div>
@@ -139,8 +145,9 @@
               target="_blank"
             >
               <img
-                src="src/image/image-projetos/calculadora.png"
+                src="src/image/image-projetos/calculadora.webp"
                 alt="Imagem da calculadora"
+                loading="lazy"
               />
             </a>
 
@@ -176,8 +183,9 @@
           <div class="card">
             <a href="https://arthurcastro99.github.io/pokedex/" target="_blank">
               <img
-                src="src/image/image-projetos/pokedex.png"
+                src="src/image/image-projetos/pokedex.webp"
                 alt="Imagem do pokedex"
+                loading="lazy"
               />
             </a>
             <div class="descricao">
@@ -214,8 +222,9 @@
               target="_blank"
             >
               <img
-                src="src/image/image-projetos/crownfolio.png"
+                src="src/image/image-projetos/crownfolio.webp"
                 alt="Imagem do crownfolio"
+                loading="lazy"
               />
             </a>
             <div class="descricao">
@@ -259,8 +268,9 @@
             >
               <div>
                 <img
-                  src="src/image/image-projetos/git-api.png"
-                  alt="Imagem do Testimonials Grid Section"
+                  src="src/image/image-projetos/git-api.webp"
+                  alt="Imagem do Git Api"
+                  loading="lazy"
                 />
               </div>
             </a>
@@ -298,8 +308,9 @@
               target="_blank"
             >
               <img
-                src="src/image/image-projetos/galeria-js.png"
-                alt="Imagem do Testimonials Grid Section"
+                src="src/image/image-projetos/galeria-js.webp"
+                alt="Imagem da Galeria JS"
+                loading="lazy"
               />
             </a>
             <div class="descricao">
@@ -334,8 +345,9 @@
               target="_blank"
             >
               <img
-                src="src/image/image-projetos/conselho-automatico.png"
-                alt="Imagem do Testimonials Grid Section"
+                src="src/image/image-projetos/conselho-automatico.webp"
+                alt="Imagem do Conselho Automatico"
+                loading="lazy"
               />
             </a>
             <div class="descricao">
@@ -370,8 +382,9 @@
               target="_blank"
             >
               <img
-                src="src/image/image-projetos/testimonials.png"
+                src="src/image/image-projetos/testimonials.webp"
                 alt="Imagem do Testimonials Grid Section"
+                loading="lazy"
               />
             </a>
 
@@ -406,8 +419,9 @@
               target="_blank"
             >
               <img
-                src="src/image/image-projetos/card-feature.png"
-                alt="Imagem do Testimonials Grid Section"
+                src="src/image/image-projetos/card-feature.webp"
+                alt="Imagem do Card Feature"
+                loading="lazy"
               />
             </a>
             <div class="descricao">
@@ -444,13 +458,19 @@
 
       <div class="contato-social">
         <div class="redes-sociais">
-          <a href="https://wa.me/5591998265505" target="_blank"
+          <a
+            href="https://wa.me/5591998265505"
+            target="_blank"
+            aria-label="Ir para o WhatsApp"
             ><i class="fa-brands fa-whatsapp"></i>
           </a>
         </div>
 
         <div class="redes-sociais">
-          <a href="https://www.instagram.com/arthurcastro_99/" target="_blank"
+          <a
+            href="https://www.instagram.com/arthurcastro_99/"
+            target="_blank"
+            aria-label="Ir para o Instagram"
             ><i class="fa-brands fa-instagram"></i>
           </a>
         </div>
@@ -459,12 +479,16 @@
           <a
             href="https://www.linkedin.com/in/arthur-castro-b70a02223/"
             target="_blank"
+            aria-label="Ir para o LinkedIn"
             ><i class="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
 
         <div class="redes-sociais">
-          <a href="https://github.com/ArthurCastro99" target="_blank"
+          <a
+            href="https://github.com/ArthurCastro99"
+            target="_blank"
+            aria-label="Ir para o GitHub"
             ><i class="fa-brands fa-github"></i>
           </a>
         </div>

@@ -151,19 +151,32 @@ footer {
 
   /* Links dentro da lista do nav */
   header nav .nav-list {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     background-color: var(--fundo-secundario);
     position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    transition: 0.1s all ease;
     z-index: 5;
+
+    /* estado fechado */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(30rem);
+    transition:
+      opacity 0.25s ease,
+      visibility 0.25s ease,
+      transform 0.25s ease;
   }
 
   header nav .nav-list li {
-    transition: 0.1s all ease;
+    transition: 0.2s all ease;
     font-size: 3rem;
   }
 
@@ -183,16 +196,10 @@ footer {
   }
 
   header nav input:checked ~ ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    animation: surgir-direita 200ms ease-in;
-  }
-
-  header nav input:unchecked ~ ul {
-    animation: surgir-direita 200ms ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
   }
 }
 
@@ -239,6 +246,7 @@ footer {
     display: none;
   }
   header nav {
+    width: 100%;
     height: 100%;
   }
 
@@ -246,10 +254,16 @@ footer {
     display: flex;
     justify-content: end;
     align-items: center;
-    position: static;
+    width: 100%;
     height: 100%;
     background-color: transparent;
     gap: 1rem;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+    position: static;
+    flex-direction: row;
   }
 
   header nav .nav-list li a:hover {
@@ -342,7 +356,7 @@ footer {
   }
 
   main .sobre div .perfil-link {
-    background: url("../image/image-perfil/perfil.jpg") top 10% center/cover
+    background: url("../image/image-perfil/perfil.webp") top 10% center/cover
       no-repeat;
     border: solid 0.5rem var(--cor-principal);
     min-width: 25rem;
@@ -761,7 +775,7 @@ footer {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  z-index: 1000;
+  z-index: 4;
   border-radius: 50%;
   border: none;
   opacity: 0;

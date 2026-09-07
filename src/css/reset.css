@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   border: none;
-  outline: none;
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "JetBrains Mono", sans-serif;
@@ -11,6 +10,14 @@ a {
   text-decoration: none;
   color: white;
 }
+
 li {
   list-style-type: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+label:focus-visible {
+  outline: 2px solid var(--cor-secundario);
+  outline-offset: 3px;
 }
