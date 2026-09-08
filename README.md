@@ -1,6 +1,6 @@
 # Projeto Portfólio
 
-> Repositório oficial do meu portfólio pessoal: [portfolio-arthur-castro](https://github.com/ArthurCastro99/portfolio-arthur-castro)
+> Repositório oficial do meu portfólio pessoal: [portfolio-arthurscdev](https://github.com/arthurscdev/portfolio-arthur-castro)
 
 ## Sobre Mim
 
@@ -38,7 +38,7 @@ Fique à vontade para testar, clonar ou sugerir melhorias no projeto!
 
 ### Passo a passo para Download:
 
-1. Acesse o [Repositório no GitHub](https://github.com/ArthurCastro99/portfolio-arthur-castro).
+1. Acesse o [Repositório no GitHub](https://github.com/arthurscdev/portfolio-arthurscdev).
 2. Clique no botão verde **`< > Code`**.
 3. Escolha a opção **Download ZIP** ou copie a URL HTTPS para clonar.
 
@@ -51,12 +51,12 @@ Fique à vontade para testar, clonar ou sugerir melhorias no projeto!
 git clone
 ```
 
-[https://github.com/ArthurCastro99/portfolio-arthur-castro.git](https://github.com/ArthurCastro99/portfolio-arthur-castro.git)
+[https://github.com/arthurscdev/portfolio-arthurscdev.git](https://github.com/arthurscdev/portfolio-arthurscdev.git)
 
 ## Contato
 
 Eu gosto muito de ouvir e ler opiniões que me ajudam a aprender e evoluir, então se você tiver algo para falar sobre os meus projetos, me envie mensagem por um desses links :
 
-📱 : [**Instagram**](https://www.instagram.com/arthurcastro_99/)
+📱 : [**Instagram**](https://www.instagram.com/arthurscdev/)
 
-💻 : [**Linkedin**](https://www.linkedin.com/in/arthur-castro-b70a02223/)
+💻 : [**Linkedin**](https://www.linkedin.com/in/arthur-sc/)
